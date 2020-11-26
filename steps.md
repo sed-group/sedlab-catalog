@@ -50,6 +50,8 @@ Directory: `dist`
 
 Site now live and doing CI at <https://sedlab-catalog.netlify.app>
 
+Add `db.json` to m,ock up API with <https://my-json-server.typicode.com/>
+
 Add Axios for API fetching: <https://vuejs.org/v2/cookbook/using-axios-to-consume-apis.html>
 
 ```bash
