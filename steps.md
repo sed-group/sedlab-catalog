@@ -49,3 +49,9 @@ npm run build
 Directory: `dist`
 
 Site now live and doing CI at <https://sedlab-catalog.netlify.app>
+
+Add Axios for API fetching: <https://vuejs.org/v2/cookbook/using-axios-to-consume-apis.html>
+
+```bash
+npm install axios
+```

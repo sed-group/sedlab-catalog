@@ -45,13 +45,6 @@
               </v-btn>
             </v-card-actions>
           </v-card>
-          <!-- <a
-            :href="app.href"
-            class="subheading mx-3"
-            target="_blank"
-          >
-            {{ app.name }}
-          </a> -->
         </v-row>
       </v-col>
     </v-row>
@@ -59,84 +52,18 @@
 </template>
 
 <script>
+  import axios from 'axios';
+
   export default {
     name: 'Main',
 
     data: () => ({
-      applications: [
-        {
-          name: 'EF-M',
-          href: 'https://github.com/sed-group/sedlab-efm',
-          description: 'Lorem ipsum',
-          contact: 'tbd',
-          href_access: '',
-          href_docs: '',
-          href_source: 'https://github.com/sed-group/sedlab-efm',
-        },
-        {
-          name: 'Morpheus',
-          href: 'https://github.com/sed-group/morpheus',
-          description: 'Lorem ipsum',
-          contact: 'tbd',
-          href_access: '',
-          href_docs: '',
-          href_source: 'https://github.com/sed-group/morpheus',
-        },
-        {
-          name: 'Value',
-          href: 'https://github.com/sed-group/sedlab-value',
-          description: 'Lorem ipsum',
-          contact: 'tbd',
-          href_access: '',
-          href_docs: '',
-          href_source: 'https://github.com/sed-group/sedlab-value',
-        },
-        {
-          name: 'Test',
-          href: '',
-          description: 'Lorem ipsum',
-          contact: 'tbd',
-          href_access: '',
-          href_docs: '',
-          href_source: '',
-        },
-        {
-          name: 'Test',
-          href: '',
-          description: 'Lorem ipsum',
-          contact: 'tbd',
-          href_access: '',
-          href_docs: '',
-          href_source: '',
-        },
-        {
-          name: 'Test',
-          href: '',
-          description: 'Lorem ipsum',
-          contact: 'tbd',
-          href_access: '',
-          href_docs: '',
-          href_source: '',
-        },
-        {
-          name: 'Test',
-          href: '',
-          description: 'Lorem ipsum',
-          contact: 'tbd',
-          href_access: '',
-          href_docs: '',
-          href_source: '',
-        },
-        {
-          name: 'Test',
-          href: '',
-          description: 'Lorem ipsum',
-          contact: 'tbd',
-          href_access: '',
-          href_docs: '',
-          href_source: '',
-        },
-      ],
+      applications: null,
     }),
+    created() {
+      // Simple GET request using axios
+      axios.get("https://my-json-server.typicode.com/sed-group/sedlab-catalog/applications")
+        .then(response => this.applications = response.data);
+    },
   }
 </script>
