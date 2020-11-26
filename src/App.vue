@@ -21,7 +21,7 @@
         <v-icon>mdi-open-in-new</v-icon>
       </v-btn>
       <v-btn
-        href=""
+        @click="overlay = !overlay"
         text
       >
         <span class="mr-2">Sign In</span>
@@ -32,6 +32,39 @@
     <v-main>
       <Main/>
     </v-main>
+    <v-overlay :value="overlay">
+      <v-card
+        class="ma-2 pa-4"
+        width="344"
+        light
+      >
+        <v-form v-model="valid">
+          <v-container>
+            <v-row>
+              <v-text-field
+                v-model="email"
+                label="E-mail"
+                required
+              ></v-text-field>
+            </v-row>
+            <v-row>
+              <v-text-field
+                v-model="password"
+                label="password"
+                required
+                :type="show1 ? 'text' : 'password'"
+              ></v-text-field>
+            </v-row>
+          </v-container>
+        </v-form>
+        <v-btn
+          color="error"
+          @click="overlay = false"
+        >
+          Close
+        </v-btn>
+      </v-card>
+    </v-overlay>
   </v-app>
 </template>
 
@@ -47,6 +80,7 @@ export default {
 
   data: () => ({
     //
+    overlay: false,
   }),
 };
 </script>
