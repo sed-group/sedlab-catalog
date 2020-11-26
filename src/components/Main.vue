@@ -45,6 +45,14 @@
               </v-btn>
             </v-card-actions>
           </v-card>
+          <v-alert
+            dense
+            outlined
+            type="error"
+            v-if="errorMessage!=null"
+          >
+            Error message: {{errorMessage}}
+          </v-alert>
         </v-row>
       </v-col>
     </v-row>
@@ -59,11 +67,16 @@
 
     data: () => ({
       applications: null,
+      errorMessage: null,
     }),
     created() {
       // Simple GET request using axios
-      axios.get("https://my-json-server.typicode.com/sed-group/sedlab-catalog/applications")
-        .then(response => this.applications = response.data);
+      axios.get("https://my-json-server.typicode.com/sed-group/sedlab-catalog/applicationss")
+        .then(response => this.applications = response.data)
+        .catch(error => {
+          this.errorMessage = error.message;
+          console.error("There was an error!", error);
+      });
     },
   }
 </script>
