@@ -1,5 +1,5 @@
 # sedlab-catalog
-
+[![Netlify Status](https://api.netlify.com/api/v1/badges/9796b6a1-154c-412d-aa36-b854d3d43bd5/deploy-status)](https://app.netlify.com/sites/sedlab-catalog/deploys)
 ## Project setup
 ```
 npm install
