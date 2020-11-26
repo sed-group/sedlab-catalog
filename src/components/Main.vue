@@ -6,22 +6,21 @@
           <v-card
             v-for="(app, i) in applications"
             :key="i"
-            class="ma-2"
+            class="d-flex flex-column ma-2"
             width="344"
           >
             <v-card-title>{{ app.name }}</v-card-title>
-            <v-card-subtitle>Testing</v-card-subtitle>
+            <v-card-subtitle><strong>Lead: </strong>{{ app.contact }}</v-card-subtitle>
             <v-card-text>
               <div class="text--primary">
-                <strong>Description: </strong>{{ app.description }}
-                <br />
-                <strong>Contact: </strong>{{ app.contact }}
+                {{ app.description }}
               </div>
             </v-card-text>
+            <v-spacer></v-spacer>
             <v-card-actions>
               <v-btn
                 text
-                color="indigo accent-4"
+                color="grey accent-4"
                 :href="app.href_source"
                 target="_blank"
               >
@@ -29,7 +28,7 @@
               </v-btn>
               <v-btn
                 text
-                color="indigo accent-4"
+                color="grey accent-4"
                 :href="app.href_docs"
                 target="_blank"
               >

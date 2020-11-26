@@ -2,7 +2,6 @@
   <v-app>
     <v-app-bar
       app
-      color="indigo"
       dark
     >
       <v-toolbar-title class="headline text-uppercase">
@@ -40,6 +39,9 @@
       >
         <v-form v-model="valid">
           <v-container>
+            <v-row>
+              <h1>Work In Progress</h1>
+            </v-row>
             <v-row>
               <v-text-field
                 v-model="email"
