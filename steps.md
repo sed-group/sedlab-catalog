@@ -39,3 +39,13 @@ Edit the files in ```src```.
 Deploy in Netlify: <https://app.netlify.com/teams/inigoalonso/overview>
 
 New site from Git > GitHub > sed-group
+
+Build command:
+
+```bash
+npm run build
+```
+
+Directory: `public`
+
+Site now live and doing CI at <https://sedlab-catalog.netlify.app>
