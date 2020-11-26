@@ -1,0 +1,30 @@
+{
+    "applications": [{
+            "name": "EF-M",
+            "href": "https://github.com/sed-group/sedlab-efm",
+            "description": "Enhanced Function-Means modeller",
+            "contact": "Jakob Müller",
+            "href_access": "",
+            "href_docs": "",
+            "href_source": "https://github.com/sed-group/sedlab-efm",
+        },
+        {
+            "name": "Morpheus",
+            "href": "https://github.com/sed-group/morpheus",
+            "description": "Morphological matrix generation",
+            "contact": "Julian Martinsson",
+            "href_access": "",
+            "href_docs": "",
+            "href_source": "https://github.com/sed-group/morpheus",
+        },
+        {
+            "name": "Value",
+            "href": "https://github.com/sed-group/sedlab-value",
+            "description": "Value Driven Design application",
+            "contact": "Iñigo Alonso Fernandez",
+            "href_access": "",
+            "href_docs": "",
+            "href_source": "https://github.com/sed-group/sedlab-value",
+        }
+    ]
+}
