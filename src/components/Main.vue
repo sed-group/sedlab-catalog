@@ -70,8 +70,9 @@
       errorMessage: null,
     }),
     created() {
-      // Simple GET request using axios
-      axios.get("https://my-json-server.typicode.com/sed-group/sedlab-catalog/applicationss")
+      // GET request using axios with set headers
+      const headers = { "Content-Type": "application/json" };
+      axios.get("https://my-json-server.typicode.com/sed-group/sedlab-catalog/applications", { headers })
         .then(response => this.applications = response.data)
         .catch(error => {
           this.errorMessage = error.message;
