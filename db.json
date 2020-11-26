@@ -6,7 +6,7 @@
             "contact": "Jakob Müller",
             "href_access": "",
             "href_docs": "",
-            "href_source": "https://github.com/sed-group/sedlab-efm",
+            "href_source": "https://github.com/sed-group/sedlab-efm"
         },
         {
             "name": "Morpheus",
@@ -15,7 +15,7 @@
             "contact": "Julian Martinsson",
             "href_access": "",
             "href_docs": "",
-            "href_source": "https://github.com/sed-group/morpheus",
+            "href_source": "https://github.com/sed-group/morpheus"
         },
         {
             "name": "Value",
@@ -24,7 +24,7 @@
             "contact": "Iñigo Alonso Fernandez",
             "href_access": "",
             "href_docs": "",
-            "href_source": "https://github.com/sed-group/sedlab-value",
+            "href_source": "https://github.com/sed-group/sedlab-value"
         }
     ]
 }
