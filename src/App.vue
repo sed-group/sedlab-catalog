@@ -83,6 +83,8 @@ export default {
   data: () => ({
     //
     overlay: false,
+    email: null,
+    password: null,
   }),
 };
 </script>
