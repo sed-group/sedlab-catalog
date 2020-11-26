@@ -4,7 +4,7 @@
       <v-col cols="12">
         <v-row>
           <v-card
-            v-for="(app, i) in catalog"
+            v-for="(app, i) in applications"
             :key="i"
             class="ma-2"
             width="344"
@@ -63,7 +63,7 @@
     name: 'Main',
 
     data: () => ({
-      catalog: [
+      applications: [
         {
           name: 'EF-M',
           href: 'https://github.com/sed-group/sedlab-efm',
