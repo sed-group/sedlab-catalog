@@ -46,6 +46,6 @@ Build command:
 npm run build
 ```
 
-Directory: `public`
+Directory: `dist`
 
 Site now live and doing CI at <https://sedlab-catalog.netlify.app>
