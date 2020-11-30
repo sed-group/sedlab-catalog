@@ -37,7 +37,7 @@
         width="344"
         light
       >
-        <v-form v-model="valid">
+        <v-form>
           <v-container>
             <v-row>
               <h1>Work In Progress</h1>
@@ -54,7 +54,6 @@
                 v-model="password"
                 label="password"
                 required
-                :type="show1 ? 'text' : 'password'"
               ></v-text-field>
             </v-row>
           </v-container>
