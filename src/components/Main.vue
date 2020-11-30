@@ -71,6 +71,7 @@
     created() {
       // GET request using axios with set headers
       const headers = { "Content-Type": "application/json" };
+      //axios.get("https://test-app-afnkneebca-ew.a.run.app/applications", { headers })
       axios.get("https://my-json-server.typicode.com/sed-group/sedlab-catalog/applications", { headers })
         .then(response => this.applications = response.data)
         .catch(error => {
