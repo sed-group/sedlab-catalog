@@ -8,6 +8,7 @@
             :key="i"
             class="d-flex flex-column ma-2"
             width="344"
+            color="rgb(255, 255, 255, 0.4)"
           >
             <v-card-title>{{ app.name }}</v-card-title>
             <v-card-subtitle><strong>Lead: </strong>{{ app.contact }}</v-card-subtitle>
@@ -20,7 +21,7 @@
             <v-card-actions>
               <v-btn
                 text
-                color="grey accent-4"
+                color="black accent-4"
                 :href="app.href_source"
                 target="_blank"
               >
@@ -28,7 +29,7 @@
               </v-btn>
               <v-btn
                 text
-                color="grey accent-4"
+                color="black accent-4"
                 :href="app.href_docs"
                 target="_blank"
               >

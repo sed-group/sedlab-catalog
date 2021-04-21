@@ -29,7 +29,9 @@
     </v-app-bar>
 
     <v-main>
-      <Main/>
+      <video-bg :sources="['Lines-min.mp4']" img="Lines-min.png">
+        <Main/>
+      </video-bg>
     </v-main>
     <v-overlay :value="overlay">
       <v-card
@@ -71,12 +73,14 @@
 
 <script>
 import Main from './components/Main';
+import VideoBg from 'vue-videobg'
 
 export default {
   name: 'App',
 
   components: {
     Main,
+    VideoBg,
   },
 
   data: () => ({
