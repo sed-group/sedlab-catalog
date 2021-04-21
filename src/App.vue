@@ -3,6 +3,7 @@
     <v-app-bar
       app
       dark
+      color="#001436"
     >
       <v-toolbar-title class="headline text-uppercase">
         <span>SED</span>
