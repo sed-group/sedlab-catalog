@@ -25,15 +25,6 @@
             "href_access": "https://sedlab-valueapp.netlify.app/",
             "href_docs": "",
             "href_source": "https://github.com/sed-group/sedlab-value"
-        },
-        {
-            "name": "Test",
-            "href": "",
-            "description": "Testy McTestface",
-            "contact": "Iñigo Alonso Fernandez",
-            "href_access": "",
-            "href_docs": "",
-            "href_source": ""
         }
     ]
 }
