@@ -13,6 +13,14 @@
       <v-spacer></v-spacer>
 
       <v-btn
+        href="https://blog.systemsengineering.design/"
+        target="_blank"
+        text
+      >
+        <span class="mr-2">SEDBlog</span>
+        <v-icon>mdi-open-in-new</v-icon>
+      </v-btn>
+      <v-btn
         href="https://sedlab-catalog.netlify.app/"
         target="_blank"
         text
